@@ -614,6 +614,7 @@ main {
     height: calc(var(--vh, 1vh) * 100);
     position: relative;
     line-height: 0;
+    overflow-y: hidden;
     @include sp {
         height: calc(var(--vh, 1vh) * 100);
     }
@@ -649,6 +650,7 @@ main {
     height: 80px;
     padding: 0 20px;
     background-color: $bgColor;
+    overflow-y: hidden;
     position: absolute;
     bottom: 0;
     left: 0;
