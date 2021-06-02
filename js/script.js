@@ -1,11 +1,5 @@
 $(function(){
 // AOS.js
-AOS.init({
-    duration: 1000,
-  });
-
-
-
 
 // スワイパー
     var swiper = new Swiper('.swiper-container', {
