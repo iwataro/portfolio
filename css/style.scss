@@ -666,7 +666,7 @@ main {
     }
     @include sp {
         font-size: 12px;
-        bottom: 12px;
+        bottom: 0px;
     }
 }
 
@@ -698,7 +698,7 @@ main {
     }
     @include sp {
         width: 35%;
-        bottom: 40px;
+        bottom: 0px;
         left: 50px;
     }
 }
