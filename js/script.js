@@ -58,18 +58,6 @@ window.addEventListener('DOMContentLoaded', function(){
 
 
 
-  if(element.requestFullscreen) {
-    element.requestFullscreen();
-    }
-    else if(element.webkitRequestFullScreen){
-    element.webkitRequestFullScreen();
-    }
-    else if(element.mozRequestFullScreen){
-    element.mozRequestFullScreen();
-    }
-    else if(element.msRequestFullscreen){
-    element.msRequestFullscreen();
-    }
 });
 
 
