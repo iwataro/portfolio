@@ -691,14 +691,15 @@ main {
     width: 290px;
     object-fit: contain;
     position: absolute;
-    top: 80px;
+    top: calc(100vh - 235px);
     left: 80px;
     @include tab {
         width: 220px;
+        top: calc(100vh - 200px);
     }
     @include sp {
         width: 180px;
-        // top: calc(100vh - 135px);
+        top: calc(100vh - 135px);
         left: 30px;
     }
 }
