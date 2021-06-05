@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function(){
   });
 
 
-  
+
 // 100vh修正
   const setFillHeight = () => {
     const vh = window.innerHeight * 0.01;
@@ -55,6 +55,21 @@ window.addEventListener('DOMContentLoaded', function(){
   
   // 初期化
   setFillHeight();
+
+
+
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+    }
+    else if(element.webkitRequestFullScreen){
+    element.webkitRequestFullScreen();
+    }
+    else if(element.mozRequestFullScreen){
+    element.mozRequestFullScreen();
+    }
+    else if(element.msRequestFullscreen){
+    element.msRequestFullscreen();
+    }
 });
 
 
