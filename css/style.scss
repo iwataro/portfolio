@@ -698,7 +698,7 @@ main {
     }
     @include sp {
         width: 180px;
-        bottom: 40px;
+        top: calc(100vh - 135px);
         left: 30px;
     }
 }
