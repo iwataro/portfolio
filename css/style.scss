@@ -695,11 +695,10 @@ main {
     left: 80px;
     @include tab {
         width: 220px;
-        top: calc(100vh - 200px);
     }
     @include sp {
         width: 160px;
-        bottom: 90px;
+        bottom: 140px;
         left: 20px;
     }
 }
