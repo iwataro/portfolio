@@ -211,6 +211,9 @@ main {
         color: $color1;
         padding-top: 100px;
         padding-bottom: 90px;
+        @include sp {
+            padding-bottom: 50px;
+        }
     }
 
     &_flex {
@@ -314,6 +317,9 @@ main {
         color: $color1;
         padding-top: 100px;
         padding-bottom: 20px;
+        @include sp {
+            padding-bottom: 0;
+        }
     }
 
     &__cat img {
@@ -325,7 +331,7 @@ main {
             padding-left: 100px;
         }
         @include sp {
-            width: 250px;
+            width: 220px;
         }
     }
 
@@ -397,6 +403,9 @@ main {
     // height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     padding-top: 190px;
+    @include sp {
+        padding-top: 120px;
+    }
 
 
     &__box {
@@ -418,6 +427,10 @@ main {
             position: absolute;
             top: -168px;
             right: 35px;
+            @include sp {
+                width: 40%;
+                top: -115px;
+            }
         }
     }
 
@@ -634,6 +647,7 @@ main {
         font-size: 16px;
         @include sp {
             font-size: 13px;
+            line-height: 90vh;
         }
     }
 
@@ -699,7 +713,7 @@ main {
     }
     @include sp {
         width: 160px;
-        bottom: 160px;
+        bottom: 92px;
         left: 20px;
     }
 }
