@@ -691,10 +691,11 @@ main {
     width: 290px;
     object-fit: contain;
     position: absolute;
-    bottom: 130px;
+    bottom: 80px;
     left: 80px;
     @include tab {
         width: 220px;
+        bottom: 150px;
     }
     @include sp {
         width: 160px;
