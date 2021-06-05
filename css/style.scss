@@ -610,14 +610,11 @@ main {
 
 .thanks {
     width: 100%;
-    height: 100vh;
-    // height: calc(var(--vh, 1vh) * 100);
+    // height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     position: relative;
     line-height: 0;
     overflow-y: hidden;
-    @include sp {
-        // height: calc(var(--vh, 1vh) * 100);
-    }
     &:before {
         content: "";
         background-color: rgba(0,0,0,0.5);
