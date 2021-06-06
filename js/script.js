@@ -1,5 +1,4 @@
 $(function(){
-// AOS.js
 
 // スワイパー
     var swiper = new Swiper('.swiper-container', {
@@ -56,8 +55,10 @@ window.addEventListener('DOMContentLoaded', function(){
   // 初期化
   setFillHeight();
 
-
-
 });
 
 
+AOS.init({
+    duration: 1000,
+    easing: 'ease',
+});
