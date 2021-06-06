@@ -1,5 +1,6 @@
 @import "variable";
 @import "page-works";
+@import "single";
 
 // 共通CSS
 body {
@@ -36,7 +37,7 @@ main {
 
 .header {
     width: 100%;
-    height: 130px;
+    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -761,4 +762,8 @@ main {
     width: 100%;
     visibility: hidden;
 }
+
+
+
+
 

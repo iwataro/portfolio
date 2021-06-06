@@ -39,6 +39,10 @@
         height: 210px;
         object-fit: cover;
         border: 2px solid $color1;
+        transition: .5s;
+        &:hover {
+            opacity: 0.5;
+        }
 
         &_contain {
             display: block;
@@ -46,6 +50,10 @@
             height: 210px;
             object-fit: contain;
             border: 2px solid $color1; 
+            transition: .5s;
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 
@@ -87,3 +95,4 @@
         line-height: 40px;
     }
 }
+
