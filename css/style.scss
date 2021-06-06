@@ -1,4 +1,5 @@
 @import "variable";
+@import "page-works";
 
 // 共通CSS
 body {
@@ -40,13 +41,19 @@ main {
     top: 0;
     left: 0;
     z-index: 100;
+    @include tab {
+        height: 80px;
+    }
+    @include sp {
+        height: 60px;
+    }
 
     &__inner {
         padding: 25px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include sp {
+        @include tab {
             padding: 15px;
         }
     }
@@ -754,3 +761,4 @@ main {
     width: 100%;
     visibility: hidden;
 }
+
