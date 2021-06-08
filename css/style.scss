@@ -8,13 +8,13 @@ body {
 }
 
 main {
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-    height: calc(var(--vh, 1vh) * 100);
+    // overflow: auto;
+    // scroll-snap-type: y mandatory;
+    // height: calc(var(--vh, 1vh) * 100);
 }
 
 .fv, section {
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
 }
 
 .section__ttl {
@@ -185,7 +185,7 @@ main {
 .concept {
     width: 100%;
     // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    // height: calc(var(--vh, 1vh) * 100);
 
     &:before {
         content:"";
@@ -203,9 +203,17 @@ main {
         background-size:cover;
     }
 
+    &__inner {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        @include sp {
+            padding-bottom: 120px;
+        }
+    }
+
     &__ttl {
         color: $color1;
-        padding-top: 100px;
+        // padding-top: 100px;
         padding-bottom: 144px;
         @include sp {
             padding-bottom: 80px;
@@ -235,12 +243,20 @@ main {
 .service {
     width: 100%;
     // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    // height: calc(var(--vh, 1vh) * 100);
     background-color: $bgColor;
+
+    &__inner {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        @include sp {
+            padding-bottom: 120px;
+        }
+    }
 
     &__ttl {
         color: $color1;
-        padding-top: 100px;
+        // padding-top: 100px;
         padding-bottom: 90px;
         @include sp {
             padding-bottom: 50px;
@@ -341,12 +357,16 @@ main {
 .works {
     width: 100%;
     // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    // height: calc(var(--vh, 1vh) * 100);
+    &__inner {
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
 
 
     &__ttl {
         color: $color1;
-        padding-top: 100px;
+        // padding-top: 100px;
         padding-bottom: 20px;
         @include sp {
             padding-bottom: 0;
@@ -380,6 +400,8 @@ main {
         }
 
         &__img {
+            width: 50px;
+            height: 50px;
             margin-right: 10px;
         }
     }
@@ -432,10 +454,18 @@ main {
 .about {
     width: 100%;
     // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    padding-top: 190px;
+    // height: calc(var(--vh, 1vh) * 100);
+    // padding-top: 190px;
     @include sp {
-        padding-top: 120px;
+        // padding-top: 120px;
+    }
+
+    &__inner {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        @include sp {
+            padding-top: 120px;
+        }
     }
 
 
@@ -443,13 +473,15 @@ main {
         width: 640px;
         margin: 0 auto;
         background-color: white;
+        padding-top: 60px;
         padding-bottom: 60px;
         padding-right: 95px;
         padding-left: 95px;
         position: relative;
         @include sp {
             width: 90%;
-            padding-bottom: 30px;
+            padding-top: 30px;
+            padding-bottom: 50px;
             padding-right: 20px;
             padding-left: 20px;
         }
@@ -460,15 +492,15 @@ main {
             right: 35px;
             @include sp {
                 width: 40%;
-                top: -115px;
+                top: -110px;
             }
         }
     }
 
     &__ttl {
         color: $color2;
-        padding-top: 60px;
-        padding-bottom: 30px;
+        // padding-top: 60px;
+        padding-bottom: 40px;
         @include sp {
             padding-top: 30px;
         }
@@ -589,15 +621,24 @@ main {
 .contact {
     width: 100%;
     // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    // height: calc(var(--vh, 1vh) * 100);
     background-color: #fff;
     position: relative;
 
+    &__inner {
+        padding-top: 250px;
+        padding-bottom: 250px;
+        @include sp {
+            padding-top: 180px;
+            padding-bottom: 200px;
+        }
+    }
+
     &__ttl {
         color: $color2;
-        padding-top: 220px;
+        // padding-top: 220px;
         @include sp {
-            padding-top: 150px;
+            // padding-top: 150px;
         }
     }
 
@@ -664,9 +705,9 @@ main {
 .thanks {
     width: 100%;
     // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    // height: calc(var(--vh, 1vh) * 100);
     position: relative;
-    line-height: 0;
+    // line-height: 0;
     overflow-y: hidden;
     &:before {
         content: "";
@@ -679,32 +720,71 @@ main {
         width: 100%;
     }
 
+    &__inner {
+        position: relative;
+        padding-top: 400px; 
+        padding-bottom: 400px;
+        @include sp {
+            padding-top: 300px;
+            padding-bottom: 300px;
+        }
+    }
+
 
     &__txt {
         text-align: center;
-        line-height: 100vh;
         color: $color1;
         font-size: 16px;
         @include sp {
             font-size: 13px;
-            line-height: 90vh;
         }
     }
+}
 
-    &__inner {
-        position: relative;
+
+.thanks__moon {
+    position: absolute;
+    top: 80px;
+    right: 130px;
+    @media screen and (max-width: 1024px) {
+        width: 240px;
+        height: 240px;
+        top: 70px;
+        right: 40px;
+    }
+    @include sp {
+        width: 40%;
+        height: auto;
+        object-fit: contain;
+        top: 40px;
+        right: 40px;
     }
 }
+
+.thanks__img {
+    width: 290px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    @media screen and (max-width: 1024px) {
+        width: 220px;
+        bottom: 0;
+    }
+    @include sp {
+        width: 160px;
+        bottom: 0;
+        left: 20px;
+    }
+}
+
+
 
 .footer {
     width: 100%;
     height: 80px;
     padding: 0 20px;
     background-color: $bgColor;
-    overflow-y: hidden;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     @include sp {
         height: 40px;
     }
@@ -724,46 +804,5 @@ main {
         line-height: 40px;
     }
 }
-
-.thanks__moon {
-    position: absolute;
-    top: 80px;
-    right: 130px;
-    @media screen and (max-width: 1024px) {
-        width: 40%;
-        top: 90px;
-        right: 40px;
-    }
-    @include sp {
-        width: 40%;
-        top: 90px;
-        right: 40px;
-    }
-}
-
-.thanks__img {
-    width: 290px;
-    object-fit: contain;
-    position: absolute;
-    bottom: 80px;
-    left: 80px;
-    @media screen and (max-width: 1024px) {
-        width: 220px;
-        bottom: 150px;
-    }
-    @include sp {
-        width: 160px;
-        bottom: 92px;
-        left: 20px;
-    }
-}
-
-.none {
-    width: 100%;
-    visibility: hidden;
-}
-
-
-
 
 
