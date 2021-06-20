@@ -20,17 +20,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding: 100px 0 80px;
     @include sp {
         padding-top: 70px;
     }
 
     &__card {
         width: 300px;
-        margin-bottom: 50px;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin: 0 10px 50px;
     }
 
     &__img {

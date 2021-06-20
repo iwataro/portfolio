@@ -28,11 +28,9 @@ $sp: 767px;
 @mixin inner {
     max-width: $inner;
     margin: 0 auto;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0 30px;
     @include tab {
-        padding-right: 10px;
-        padding-left: 10px;
+        padding: 0 10px;
     }
 }
 
@@ -41,14 +39,14 @@ $sp: 767px;
       display: block;
       width: 0;
       height: 0;
-      margin-top: calc((1 - #{$line-height}) * .5em);
+      margin-top: calc((1 - #{$line-height}) * 0.5em);
       content: "";
     }
     &::after {
       display: block;
       width: 0;
       height: 0;
-      margin-bottom: calc((1 - #{$line-height}) * .5em);
+      margin-bottom: calc((1 - #{$line-height}) * 0.5em);
       content: "";
     }
    }
