@@ -16,6 +16,11 @@ $(function(){
         loop: true,
         slidesPerView: 1,
         spaceBetween: 0,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
         breakpoints: {
             1: {
                 slidesPerView: 1,
