@@ -261,6 +261,12 @@ body {
   font-family: "Futura", "Hiragino Kaku Gothic", "Hiragino Kaku Gothic ProN", serif;
 }
 
+.wrapper {
+  height: 100vh;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 .section__ttl {
   font-size: 60px;
   font-weight: bold;
