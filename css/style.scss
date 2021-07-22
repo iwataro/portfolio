@@ -133,6 +133,13 @@ body {
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
+        @include sp {
+            padding-top: 150px;
+            position: static;
+            top: 0;
+            left: 0;
+            transform: none;
+        }
     }
 
     &__img {
