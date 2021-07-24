@@ -15,10 +15,21 @@
     }
 
     &_flex {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 100px 0 80px;
+        
+        &:after {
+            content: "";
+            display: block;
+            width: 340px;
+            height: 0px;
+            @include sp {
+                width: 300px;
+            }
+        }
         @include sp {
             padding: 50px 0 30px;
         }
@@ -30,6 +41,7 @@
         object-fit: cover;
         margin: 20px 0;
         border: 2px solid $color1;
+
         @include sp {
             width: 300px;
             height: 210px;
